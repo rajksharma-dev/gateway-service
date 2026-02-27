@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gateway-service
+
+  cloud:
+    gateway:
+      server:
+        webflux:
+
+          routes:
+            - id: auth-service
+              uri: http://localhost:8081
+              predicates:
+                - Path=/api/**
+
+#Read below origin value later from Env variable from EC2
+app:
+  cors:
+    allowed-origin: http://localhost:3000
