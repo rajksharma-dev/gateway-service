@@ -12,13 +12,13 @@ spring:
 
           routes:
             - id: auth-service
-#              uri: http://localhost:8081
-              uri: https://www.allactivityplanner.in
+              uri: http://localhost:8081
+#              uri: https://www.allactivityplanner.in
               predicates:
                 - Path=/api/**
 
 #Read below origin value later from Env variable from EC2
 app:
   cors:
-#    allowed-origin: http://localhost:3000
-    allowed-origin: https://www.allactivityplanner.in
+    allowed-origin: http://localhost:3000
+#    allowed-origin: https://www.allactivityplanner.in
