@@ -20,4 +20,4 @@ spring:
 app:
   cors:
 #    allowed-origin: http://localhost:3000
-    allowed-origin: https://www.allactivityplanner.in
+    allowed-origin: https://www.maintainsystems.in
